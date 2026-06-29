@@ -1,0 +1,6 @@
+# Rust target
+/target/
+Cargo.lock
+
+# Minecraft launcher runtime folder (all downloads, settings, and logs)
+/run/

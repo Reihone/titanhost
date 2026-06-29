@@ -1,0 +1,18 @@
+[package]
+name = "craft-launcher"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# eframe version pinned to 0.25.0 to match compiler constraints
+eframe = "0.25.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+sysinfo = "0.30"
+reqwest = { version = "0.11", default-features = false, features = ["json", "rustls-tls", "stream"] }
+tokio = { version = "1", features = ["full"] }
+sha2 = "0.10"
+thiserror = "1.0"
+futures-util = "0.3"
+zip = { version = "0.6", default-features = false, features = ["deflate"] }
+
