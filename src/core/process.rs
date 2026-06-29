@@ -142,7 +142,7 @@ pub fn generate_server_files(config: &LauncherConfig) -> Result<(), std::io::Err
     writeln!(props, "pvp={}", config.pvp)?;
     writeln!(props, "spawn-monsters={}", config.spawn_monsters)?;
     writeln!(props, "max-players={}", config.max_players)?;
-    writeln!(props, "motd=A Minecraft Server Powered by Craft-Launcher")?;
+    writeln!(props, "motd=A Minecraft Server Powered by TitanHost")?;
     writeln!(props, "view-distance={}", config.view_distance)?;
     writeln!(props, "allow-flight={}", config.allow_flight)?;
     writeln!(props, "level-seed={}", config.level_seed)?;

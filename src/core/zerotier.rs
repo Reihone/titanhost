@@ -43,7 +43,7 @@ pub fn read_authtoken_direct() -> Option<String> {
 /// Tries to read the cached ZeroTier authtoken from application config directory
 pub fn read_authtoken_cached() -> Option<String> {
     let home = std::env::var("HOME").unwrap_or_default();
-    let cached_path = format!("{}/.config/craft-launcher/zerotier_token.txt", home);
+    let cached_path = format!("{}/.config/titanhost/zerotier_token.txt", home);
     std::fs::read_to_string(&cached_path)
         .ok()
         .map(|s| s.trim().to_string())
@@ -53,7 +53,7 @@ pub fn read_authtoken_cached() -> Option<String> {
 /// Saves the ZeroTier authtoken to cache
 pub fn save_authtoken_cache(token: &str) -> Result<(), std::io::Error> {
     let home = std::env::var("HOME").unwrap_or_default();
-    let dir_path = format!("{}/.config/craft-launcher", home);
+    let dir_path = format!("{}/.config/titanhost", home);
     std::fs::create_dir_all(&dir_path)?;
     let cached_path = format!("{}/zerotier_token.txt", dir_path);
     std::fs::write(&cached_path, token)?;

@@ -24,7 +24,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     // 4. Run GUI native window loop
     eframe::run_native(
-        "Craft-Launcher Configurator",
+        "TitanHost Configurator",
         options,
         Box::new(|cc| Box::new(LauncherApp::new(cc))),
     )

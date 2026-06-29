@@ -903,7 +903,7 @@ impl eframe::App for LauncherApp {
                     // Header: Server Status info
                     ui.vertical_centered(|ui| {
                         ui.add_space(3.0);
-                        ui.heading("🚀 Craft-Launcher Configurator");
+                        ui.heading("🚀 TitanHost Configurator");
                         
                         if let Some(ref status) = self.server_status {
                             if status.is_online {
